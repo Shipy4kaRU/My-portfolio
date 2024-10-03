@@ -1,0 +1,1 @@
+It's a project that hasn't been done yet. It just made me sick to see an empty commit history and no new repositories (or at least changes to previous ones). I concentrated all my free time after work on this project. So it will be finalized and improved. All in good time!
