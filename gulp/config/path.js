@@ -3,7 +3,7 @@ import * as nodePath from "path";
 export const rootFolder = nodePath.basename(nodePath.resolve());
 
 //Путь исходных файлов и путь результирующих файлов
-export const distFolder = "dist";
+export const distFolder = "docs";
 export const srcFolder = "src";
 export const path = {
   dist: {
