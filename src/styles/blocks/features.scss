@@ -1,0 +1,42 @@
+.features {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  @media (min-width: $min-desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2.5em;
+    grid-template-areas:
+      "header header"
+      "feature-side feature-soft";
+  }
+}
+
+.features__header {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+  @media (min-width: $min-desktop-width) {
+    grid-area: header;
+  }
+}
+
+.feature-side {
+  @media (min-width: $min-desktop-width) {
+    grid-area: feature-side;
+  }
+}
+
+.feature-soft {
+  @media (min-width: $min-desktop-width) {
+    grid-area: feature-soft;
+  }
+}
+
+.feature + .feature {
+  margin-top: 2em;
+  @media (min-width: $min-desktop-width) {
+    margin-top: 0;
+  }
+}

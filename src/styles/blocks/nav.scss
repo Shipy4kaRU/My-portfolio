@@ -1,0 +1,132 @@
+.nav {
+  display: block;
+  position: relative;
+  align-items: center;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--container-color);
+  @media (min-width: $min-tablet-width) {
+    display: flex;
+  }
+}
+
+.nav__list-container {
+  order: -1;
+}
+
+.nav__list {
+  background-color: var(--container-color);
+  @media (max-width: $max-mobile-width) {
+    width: max-content;
+    padding: 0.3em 3em 1em 2em;
+  }
+  @media (min-width: $min-tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+}
+
+.nav__list li + li {
+  padding-top: 0.5em;
+  @media (min-width: $min-tablet-width) {
+    padding: 0;
+  }
+}
+
+.nav__link {
+  padding: 0.4em 0.35em;
+}
+
+.nav--close {
+  @media (max-width: $max-mobile-width) {
+    display: none;
+  }
+}
+
+.nav__link {
+  transition: opacity 0.45s;
+  color: var(--link-color);
+}
+
+.nav__item + .nav__item {
+  margin-top: 0.5em;
+  @media (min-width: $min-tablet-width) {
+    margin: 0 0 0 0.9rem;
+  }
+}
+
+.nav__btn-wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
+  height: 3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.7rem;
+  @media (min-width: $min-tablet-width) {
+    padding: 0;
+    margin: 0 0 0 auto;
+  }
+}
+
+.nav__btn {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  display: flex;
+}
+
+.nav__btn svg path {
+  transition: opacity 0.45s;
+}
+
+.icon {
+  color: var(--link-color);
+  transition: color 0.25s;
+}
+
+.icon:hover {
+  color: var(--btn-hover-color);
+}
+
+.icon:active {
+  opacity: 0.3;
+}
+
+.nav__btns-theme {
+  display: flex;
+}
+
+.nav__btn-theme + .nav__btn-theme {
+  margin-left: 0.4em;
+}
+
+.nav__btn--active .js-icon-theme {
+  color: var(--icon-hover-color);
+}
+
+.header__btn svg g path {
+  transition: fill 0.25s;
+}
+
+.header__btn:hover svg g path {
+  fill: var(--icon-hover-color);
+}
+
+.nav__btn {
+  background-color: transparent;
+}
+
+.nav__btn-menu {
+  @media (min-width: $min-tablet-width) {
+    display: none;
+  }
+}
+
+.nav--close {
+  @media (max-width: $max-mobile-width) {
+    display: none;
+  }
+}

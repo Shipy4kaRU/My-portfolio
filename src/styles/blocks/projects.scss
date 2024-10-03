@@ -1,0 +1,110 @@
+.projects__container {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  margin-left: -50vw;
+  background-color: var(--container-color);
+}
+
+.projects {
+  max-width: 1480px;
+  padding: 2rem 1.7rem;
+  margin: 0 auto;
+  @media (min-width: $min-desktop-width) {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    column-gap: 3em;
+    grid-template-areas:
+      "header header"
+      "btns projects"
+      "postscripts postscripts";
+  }
+}
+
+.projects__header {
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  color: var(--header-container-color);
+  @media (min-width: $min-desktop-width) {
+    grid-area: header;
+  }
+}
+
+.projects__loading {
+}
+
+.projects__btn-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  @media (min-width: $min-desktop-width) {
+    position: sticky;
+    top: 5em;
+    grid-area: btns;
+    border: 1px solid var(--line-color);
+    max-width: 13em;
+    max-height: 6em;
+    border-radius: 1.25em;
+  }
+}
+
+.projects__btn__item + .projects__btn__item {
+  margin-left: 1rem;
+}
+
+.projects__btn {
+  background-color: transparent;
+  color: var(--link-color);
+  transition: color 0.25s;
+  cursor: pointer;
+}
+
+.projects__btn:hover {
+  color: var(--icon-hover-color);
+}
+
+.projects__btn:checked + label {
+  color: var(--icon-hover-color);
+}
+
+.projects__list {
+  @media (min-width: $min-desktop-width) {
+    grid-area: projects;
+  }
+  .projects__item + .projects__item {
+    margin-top: 2em;
+  }
+}
+
+.projects__item {
+  @media (max-width: $max-tablet-width) {
+    margin-top: 2em;
+  }
+}
+
+.projects__postscript-wrapper {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 0 1.7rem;
+}
+
+.projects__postscript {
+  text-align: center;
+  margin: 0;
+  padding: 1rem 0 2.5rem 0;
+  color: var(--text-container-color);
+  @media (min-width: $min-desktop-width) {
+    grid-area: postscripts;
+  }
+}
+
+.projects__github-link {
+  color: var(--line-color);
+  transition: color 0.4s;
+}
+
+.projects__github-link:hover {
+  color: var(--icon-hover-color);
+}

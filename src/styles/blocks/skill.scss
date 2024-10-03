@@ -1,0 +1,47 @@
+.skill {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  width: auto;
+  line-height: 1.4;
+}
+
+.skill__svg-container {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $min-tablet-width) {
+    align-items: end;
+  }
+}
+
+.skill svg {
+  min-height: 1.5rem;
+  max-height: 1.5rem;
+  min-width: 1.5rem;
+  max-width: 1.5rem;
+  // width: 1.5rem;
+  // height: 1.5rem;
+  margin-right: 1rem;
+}
+
+.skill img {
+  user-select: none;
+  margin-top: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.skill__icon-svg {
+  color: var(--svg-sprite);
+}
+
+.skill__icon-svg--redux {
+  color: var(--svg-sprite-redux);
+}
+
+.skill svg + svg {
+  margin-top: 0.5rem;
+}
+
+.skills__item-text {
+}

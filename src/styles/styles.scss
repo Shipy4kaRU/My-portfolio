@@ -1,0 +1,166 @@
+// WIDTH
+$min-desktop-width: 1280px;
+$max-tablet-width: 1279.9px;
+$min-tablet-width: 768px;
+$max-mobile-width: 767.9px;
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+:root {
+  font-size: calc(0.5em + 1vw);
+  line-height: 1.3;
+  box-sizing: border-box;
+  font-family: "Bitter", "Arial", serif;
+  font-weight: normal;
+  //text-shadow: 0.01em 0.01em 0.01em #000;
+  height: 100%;
+  background-color: var(--page-color);
+  color: var(--text-page-color);
+  overflow-x: hidden;
+  @media (min-width: 1200px) {
+    font-size: 20px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: calc(0.5em + 1vw + 10px);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+svg path {
+  pointer-events: auto;
+}
+
+//Шаблон двойного контейнера
+.double-container {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding-bottom: 1px;
+}
+
+@import "./blocks/header.scss";
+
+.body__header {
+  @media (min-width: $min-tablet-width) {
+    padding: 0 1.7rem;
+  }
+}
+
+@import "./blocks/nav.scss";
+
+@import "./blocks/main.scss";
+
+.main {
+  margin: 0 1.7em;
+  padding-top: calc(3em);
+  @media (max-width: $max-mobile-width) {
+    padding-top: calc(
+      3em + 7em
+    ); //для открытого меню у телефона, значение заменится если у пользователя загрузится js файл и к меню добавится функциональность, оно сразу закроется
+  }
+}
+
+@import "./blocks/bio.scss";
+
+@import "./blocks/skills.scss";
+
+.main__skills {
+  padding: 2rem 1.7em;
+}
+
+@import "./blocks/skill.scss";
+@import "./blocks/education.scss";
+@import "./blocks/education__item-container.scss";
+
+.education__item + .education__item {
+  margin-top: 1.3em;
+}
+
+@import "./blocks/projects.scss";
+
+@import "./blocks/project-card.scss";
+@import "./blocks/links-list.scss";
+@import "./blocks/modal.scss";
+@import "./blocks/features.scss";
+@import "./blocks/feature.scss";
+@import "./blocks/footer.scss";
+
+.svg-color {
+  fill: var(--icon-color);
+}
+
+.svg-color:hover {
+  fill: var(--icon-hover-color);
+}
+
+.js-hidden {
+  display: none;
+}
+
+.disabled {
+  cursor: auto;
+  opacity: 0.5;
+}
+
+@media print {
+  * {
+    color: black !important;
+    background: none !important;
+  }
+  .header,
+  .header__container,
+  .footer,
+  .nav {
+    display: none !important;
+  }
+  .main {
+    padding: 0 !important;
+  }
+}

@@ -1,0 +1,62 @@
+.education__item-container {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  grid-template-rows: repeat(4, auto);
+  grid-column-gap: 1.5rem;
+  justify-items: start;
+  row-gap: 0.5rem;
+}
+
+.education__item-picture {
+  grid-column: 1/2;
+  grid-row: 1/5;
+}
+
+.education__item-header {
+  font-weight: bold;
+  grid-column: 2/3;
+  grid-row: 1 span;
+  margin: 0;
+  color: var(--text-page-color);
+}
+
+.education__item-header:hover {
+  color: var(--btn-hover-color);
+}
+
+.education__item-date {
+  font-size: 0.8rem;
+  line-height: 0.9;
+  grid-column: 2/3;
+  grid-row: 1 span;
+  margin: 0;
+}
+
+.education__item-text {
+  grid-column: 2/3;
+  grid-row: 1 span;
+  text-align: start;
+  margin: 0;
+}
+
+.education__item-btn {
+  grid-column: 2/3;
+  margin: 0 0 0 auto;
+  background-color: transparent;
+}
+
+.education__item-btn svg {
+  display: block;
+  width: 1.67rem;
+  height: 1.67rem;
+}
+
+.education__item-btn svg path,
+.education__item-btn svg circle {
+  stroke: var(--icon-color);
+}
+
+.education__item-btn:hover:not(.disabled) svg path,
+.education__item-btn:hover:not(.disabled) svg circle {
+  stroke: var(--icon-hover-color);
+}

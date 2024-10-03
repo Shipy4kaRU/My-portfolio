@@ -1,0 +1,2 @@
+var header=document.querySelector(".header"),iconDarkTheme=document.querySelector(".js-icon-dark-theme"),btnTheme=document.querySelector(".header__btn-theme"),hoverNavLinks=function(e){var r=this,n=e.target;n.classList.contains("nav__link")&&Array.from(n.closest(".nav__list").querySelectorAll(".nav__link")).forEach(function(e){e!==n&&(e.style.opacity=r)})};header.addEventListener("mouseover",hoverNavLinks.bind("0.4")),header.addEventListener("mouseout",hoverNavLinks.bind("1"));export{hoverNavLinks};
+//# sourceMappingURL=DarkeningNav.js.map

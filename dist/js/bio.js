@@ -1,0 +1,2 @@
+var bioImgWrapper=document.querySelector(".bio__picture-wrapper"),bio=document.querySelector(".bio"),toKnowBioHeight=function(){return bioImgWrapper.innerHTML="",bio.clientHeight},toSetBioPicture=function(e){bioImgWrapper.innerHTML='<img src="../img/BioPhoto.jpg" alt="Мое фото" class=\'bio__img\'/>';var o=document.querySelector(".bio__img");o.style.maxHeight="".concat(e,"px"),o.style.Wigth="100%"};export{toKnowBioHeight,toSetBioPicture};
+//# sourceMappingURL=bio.js.map

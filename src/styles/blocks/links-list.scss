@@ -1,0 +1,24 @@
+.links-list {
+  display: flex;
+}
+
+.links-list__item + .links-list__item {
+  margin-left: 0.7rem;
+}
+
+.links-list__link::before {
+}
+
+.links-list__link svg {
+  display: block;
+  height: 1.67rem;
+  width: 1.67rem;
+}
+
+.links-list__link path {
+  transition: fill 0.25s;
+}
+
+.links-list__link:hover:not(.disabled) path {
+  fill: var(--icon-hover-color);
+}

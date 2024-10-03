@@ -1,0 +1,88 @@
+.feature {
+  border-radius: 1.4em;
+  padding: 1.5em 0.7em 1em;
+  background-color: var(--container-color);
+}
+
+.feature__tittle {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin: 0 0.3em 0.15em;
+  color: var(--text-container-color);
+}
+
+.feature__button {
+  display: block;
+  background-color: transparent;
+  border-bottom: 1px dashed var(--text-container-color);
+  margin: 0 auto;
+  margin-bottom: 1.2em;
+  color: var(--text-container-color);
+}
+
+.feature__button:hover {
+  color: var(--icon-hover-color);
+  border-color: var(--icon-hover-color);
+}
+
+.feature__list {
+  margin-top: 0.7em;
+}
+
+.feature__list .feature__item + .feature__item {
+  margin-top: 0.5em;
+}
+
+.feature__dropdown {
+  border-radius: 0.7em;
+  padding: 0.1em;
+  background-color: var(--page-color);
+}
+
+.feature__summary {
+  text-align: left;
+  position: relative;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.3em 2em;
+  font-size: 1.1em;
+  color: var(--text-page-color);
+  transition: color 0.3s;
+}
+
+.feature__summary:hover {
+  color: var(--icon-hover-color);
+}
+
+.feature__summary::marker {
+  content: " ";
+}
+
+.feature__summary::before {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0.3em;
+  width: 1em;
+  height: 1em;
+  background-image: url("../img/arrow.svg");
+  background-size: 1em 1em;
+  transition: transform 0.5s;
+}
+
+.feature__summary.expended::before {
+  transform: rotate(90deg) translateX(-50%);
+}
+
+.feature__content {
+  padding: 0.3em;
+  border-radius: 0.7em;
+  background-color: var(--page-color);
+}
+
+.feature__text {
+  margin: 0 0.6em 0.4em 0.6em;
+  color: var(--text-page-color);
+}

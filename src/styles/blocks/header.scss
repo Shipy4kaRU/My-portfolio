@@ -1,0 +1,36 @@
+.header__container {
+  position: absolute;
+  z-index: 1;
+  height: 3em;
+  width: 100vw;
+  left: 50%;
+  margin-left: -50vw;
+  background-color: var(--container-color);
+}
+
+.header {
+  height: 3em;
+  max-width: 1480px;
+  margin: 0 auto;
+  background-color: transparent;
+  @media (min-width: $min-tablet-width) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header__nav {
+  position: absolute;
+  top: 0;
+}
+
+.jsMenuClose::after {
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 2.5px;
+  background-color: var(--line-color);
+  @media (min-width: $min-tablet-width) {
+    bottom: 0;
+  }
+}
