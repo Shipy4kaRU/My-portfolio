@@ -36,9 +36,12 @@ a {
   background-color: var(--page-color);
   color: var(--text-page-color);
   overflow-x: hidden;
+  @media (max-width: 600px) {
+    font-size: 14px;
+  }
   @media (min-width: 1200px) {
     font-size: 20px;
-  }
+  } //делает плавный шрифт от 14px до 20px для страницы
 }
 
 h1,
