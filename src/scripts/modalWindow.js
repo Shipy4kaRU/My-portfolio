@@ -5,13 +5,11 @@ const overlay = document.querySelector(".overlay");
 const btnCloseModal = document.querySelector(".modal__btn");
 
 export const showModalWindow = function (img, alt) {
-  body.style.overflow = "hidden";
   overlay.style.display = "block";
   modalWindow.show();
 };
 
 export const hideModalWindow = function () {
-  body.style.overflow = "auto";
   overlay.style.display = "none";
   modalWindow.close();
 };

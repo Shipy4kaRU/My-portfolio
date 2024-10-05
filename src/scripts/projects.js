@@ -126,9 +126,9 @@ export const addProjectsToHTML = function (projects) {
 
 export const showProjects = function (allProjects, type) {
   const projectsArr = Array.from(allProjects);
-  projectsArr.forEach((project) => project.classList.remove("js-hidden"));
+  projectsArr.forEach((project) => project.classList.remove("hidden"));
   const hideProjects = projectsArr.filter(
     (project) => !project.classList.contains(`${type}`)
   );
-  hideProjects.forEach((project) => project.classList.add("js-hidden"));
+  hideProjects.forEach((project) => project.classList.add("hidden"));
 };
