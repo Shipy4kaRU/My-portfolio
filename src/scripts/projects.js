@@ -51,22 +51,22 @@ const createProject = function (project) {
                 srcset="
                   ./img/${
                     project.picture
-                      ? `${project.picture}.webp`
+                      ? `${project.picture}Desk.webp`
                       : `NotFoundDesk.webp`
                   },
                   ./img/${
                     project.picture
-                      ? `${project.picture}@2x.webp`
+                      ? `${project.picture}Desk@2x.webp`
                       : `NotFoundDesk@2x.webp`
                   } 2x,
                   ./img/${
                     project.picture
-                      ? `${project.picture}@3x.webp`
+                      ? `${project.picture}Desk@3x.webp`
                       : `NotFoundDesk@3x.webp`
                   } 3x,
                   ./img/${
                     project.picture
-                      ? `${project.picture}@4x.webp`
+                      ? `${project.picture}Desk@4x.webp`
                       : `NotFoundDesk@4x.webp`
                   } 4x
                 "
@@ -76,22 +76,22 @@ const createProject = function (project) {
                 srcset="
                   ./img/${
                     project.picture
-                      ? `${project.picture}.png`
+                      ? `${project.picture}Desk.png`
                       : `NotFoundDesk.png`
                   },
                   ./img/${
                     project.picture
-                      ? `${project.picture}@2x.png`
+                      ? `${project.picture}Desk@2x.png`
                       : `NotFoundDesk@2x.png`
                   } 2x,
                   ./img/${
                     project.picture
-                      ? `${project.picture}@3x.png`
+                      ? `${project.picture}Desk@3x.png`
                       : `NotFoundDesk@3x.png`
                   } 3x,
                   ./img/${
                     project.picture
-                      ? `${project.picture}@4x.png`
+                      ? `${project.picture}Desk@4x.png`
                       : `NotFoundDesk@4x.png`
                   } 4x
                 "
@@ -104,22 +104,22 @@ const createProject = function (project) {
                 srcset="
                   ./img/${
                     project.picture
-                      ? `${project.picture}.webp`
+                      ? `${project.picture}Desk.webp`
                       : `NotFoundDesk.webp`
                   },
                   ./img/${
                     project.picture
-                      ? `${project.picture}@2x.webp`
+                      ? `${project.picture}Desk@2x.webp`
                       : `NotFoundDesk@2x.webp`
                   } 2x,
                   ./img/${
                     project.picture
-                      ? `${project.picture}@3x.webp`
+                      ? `${project.picture}Desk@3x.webp`
                       : `NotFoundDesk@3x.webp`
                   } 3x,
                   ./img/${
                     project.picture
-                      ? `${project.picture}@4x.webp`
+                      ? `${project.picture}Desk@4x.webp`
                       : `NotFoundDesk@4x.webp`
                   } 4x
                 "
@@ -129,22 +129,22 @@ const createProject = function (project) {
                 srcset="
                   ./img/${
                     project.picture
-                      ? `${project.picture}.png`
+                      ? `${project.picture}Desk.png`
                       : `NotFoundDesk.png`
                   },
                   ./img/${
                     project.picture
-                      ? `${project.picture}@2x.png`
+                      ? `${project.picture}Desk@2x.png`
                       : `NotFoundDesk@2x.png`
                   } 2x,
                   ./img/${
                     project.picture
-                      ? `${project.picture}@3x.png`
+                      ? `${project.picture}Desk@3x.png`
                       : `NotFoundDesk@3x.png`
                   } 3x,
                   ./img/${
                     project.picture
-                      ? `${project.picture}@4x.png`
+                      ? `${project.picture}Desk@4x.png`
                       : `NotFoundDesk@4x.png`
                   } 4x
                 "
@@ -157,22 +157,22 @@ const createProject = function (project) {
                 srcset="
                   ./img/${
                     project.picture
-                      ? `${project.picture}.webp`
+                      ? `${project.picture}Mobile.webp`
                       : `NotFoundMobile.webp`
                   },
                   ./img/${
                     project.picture
-                      ? `${project.picture}@2x.webp`
+                      ? `${project.picture}Mobile@2x.webp`
                       : `NotFoundMobile@2x.webp`
                   } 2x,
                   ./img/${
                     project.picture
-                      ? `${project.picture}@3x.webp`
+                      ? `${project.picture}Mobile@3x.webp`
                       : `NotFoundMobile@3x.webp`
                   } 3x,
                   ./img/${
                     project.picture
-                      ? `${project.picture}@4x.webp`
+                      ? `${project.picture}Mobile@4x.webp`
                       : `NotFoundMobile@4x.webp`
                   } 4x
                 "
@@ -182,22 +182,22 @@ const createProject = function (project) {
                 srcset="
                   ./img/${
                     project.picture
-                      ? `${project.picture}.png`
+                      ? `${project.picture}Mobile.png`
                       : `NotFoundMobile.png`
                   },
                   ./img/${
                     project.picture
-                      ? `${project.picture}@2x.png`
+                      ? `${project.picture}Mobile@2x.png`
                       : `NotFoundMobile@2x.png`
                   } 2x,
                   ./img/${
                     project.picture
-                      ? `${project.picture}@3x.png`
+                      ? `${project.picture}Mobile@3x.png`
                       : `NotFoundMobile@3x.png`
                   } 3x,
                   ./img/${
                     project.picture
-                      ? `${project.picture}@4x.png`
+                      ? `${project.picture}Mobile@4x.png`
                       : `NotFoundMobile@4x.png`
                   } 4x
                 "
