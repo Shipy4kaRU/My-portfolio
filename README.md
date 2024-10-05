@@ -1,1 +1,2 @@
-It's a project that hasn't been done yet. It just made me sick to see an empty commit history and no new repositories (or at least changes to previous ones). I concentrated all my free time after work on this project. So it will be finalized and improved. All in good time!
+It's a project that hasn't been done yet. It just made me sick to see an empty commit history and no new repositories (or at least changes to previous ones). I concentrated all my free time after work on this project. So it will be finalized and improved. All in good time!  
+P.S:The gulp-2024 build has been changed for this project and continues to be changed. So there will be a new version in that repository soon too:)
