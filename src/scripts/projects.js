@@ -42,9 +42,177 @@ const createProject = function (project) {
   html = `<li class="projects__item ${classOfProject}">
               <div class="projects__card project-card">
                 <div class="project-card__image">
-                  <img src='./img/${
-                    project.picture ? project.picture : `NotFoundDesk.png`
-                  }' alt='Картинка проекта «${project.name}»'>
+
+<picture>
+              <!-- Проверка на поддержку WebP для десктопа -->
+              <source
+                type="image/webp"
+                media="(min-width: 1280px)"
+                srcset="
+                  ./img/${
+                    project.picture
+                      ? `${project.picture}.webp`
+                      : `NotFoundDesk.webp`
+                  },
+                  ./img/${
+                    project.picture
+                      ? `${project.picture}@2x.webp`
+                      : `NotFoundDesk@2x.webp`
+                  } 2x,
+                  ./img/${
+                    project.picture
+                      ? `${project.picture}@3x.webp`
+                      : `NotFoundDesk@3x.webp`
+                  } 3x,
+                  ./img/${
+                    project.picture
+                      ? `${project.picture}@4x.webp`
+                      : `NotFoundDesk@4x.webp`
+                  } 4x
+                "
+              />
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./img/${
+                    project.picture
+                      ? `${project.picture}.png`
+                      : `NotFoundDesk.png`
+                  },
+                  ./img/${
+                    project.picture
+                      ? `${project.picture}@2x.png`
+                      : `NotFoundDesk@2x.png`
+                  } 2x,
+                  ./img/${
+                    project.picture
+                      ? `${project.picture}@3x.png`
+                      : `NotFoundDesk@3x.png`
+                  } 3x,
+                  ./img/${
+                    project.picture
+                      ? `${project.picture}@4x.png`
+                      : `NotFoundDesk@4x.png`
+                  } 4x
+                "
+              />
+
+              <!-- Проверка на поддержку WebP для планшетов -->
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="
+                  ./img/${
+                    project.picture
+                      ? `${project.picture}.webp`
+                      : `NotFoundDesk.webp`
+                  },
+                  ./img/${
+                    project.picture
+                      ? `${project.picture}@2x.webp`
+                      : `NotFoundDesk@2x.webp`
+                  } 2x,
+                  ./img/${
+                    project.picture
+                      ? `${project.picture}@3x.webp`
+                      : `NotFoundDesk@3x.webp`
+                  } 3x,
+                  ./img/${
+                    project.picture
+                      ? `${project.picture}@4x.webp`
+                      : `NotFoundDesk@4x.webp`
+                  } 4x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./img/${
+                    project.picture
+                      ? `${project.picture}.png`
+                      : `NotFoundDesk.png`
+                  },
+                  ./img/${
+                    project.picture
+                      ? `${project.picture}@2x.png`
+                      : `NotFoundDesk@2x.png`
+                  } 2x,
+                  ./img/${
+                    project.picture
+                      ? `${project.picture}@3x.png`
+                      : `NotFoundDesk@3x.png`
+                  } 3x,
+                  ./img/${
+                    project.picture
+                      ? `${project.picture}@4x.png`
+                      : `NotFoundDesk@4x.png`
+                  } 4x
+                "
+              />
+
+              <!-- Проверка на поддержку WebP для мобильных устройств -->
+              <source
+                type="image/webp"
+                media="(max-width: 767.9px)"
+                srcset="
+                  ./img/${
+                    project.picture
+                      ? `${project.picture}.webp`
+                      : `NotFoundMobile.webp`
+                  },
+                  ./img/${
+                    project.picture
+                      ? `${project.picture}@2x.webp`
+                      : `NotFoundMobile@2x.webp`
+                  } 2x,
+                  ./img/${
+                    project.picture
+                      ? `${project.picture}@3x.webp`
+                      : `NotFoundMobile@3x.webp`
+                  } 3x,
+                  ./img/${
+                    project.picture
+                      ? `${project.picture}@4x.webp`
+                      : `NotFoundMobile@4x.webp`
+                  } 4x
+                "
+              />
+              <source
+                media="(max-width: 767.9px)"
+                srcset="
+                  ./img/${
+                    project.picture
+                      ? `${project.picture}.png`
+                      : `NotFoundMobile.png`
+                  },
+                  ./img/${
+                    project.picture
+                      ? `${project.picture}@2x.png`
+                      : `NotFoundMobile@2x.png`
+                  } 2x,
+                  ./img/${
+                    project.picture
+                      ? `${project.picture}@3x.png`
+                      : `NotFoundMobile@3x.png`
+                  } 3x,
+                  ./img/${
+                    project.picture
+                      ? `${project.picture}@4x.png`
+                      : `NotFoundMobile@4x.png`
+                  } 4x
+                "
+              />
+
+              <img
+                src='./img/${
+                  project.picture
+                    ? `${project.picture}.png`
+                    : `NotFoundDesk.png`
+                }'
+                alt='Картинка проекта «${project.name}»'
+              />
+            </picture>
+
                 </div>
                 <p class="project-card__name">${project.name}</p>
                 <p class="project-card__caption">${project.sub}</p>
