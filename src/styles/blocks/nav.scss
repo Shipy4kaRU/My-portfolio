@@ -28,15 +28,9 @@
   }
 }
 
-.nav__list li + li {
-  padding-top: 0.5em;
-  @media (min-width: $min-tablet-width) {
-    padding: 0;
-  }
-}
-
 .nav__link {
-  padding: 0.4em 0.35em;
+  display: block;
+  padding: 0.5em;
 }
 
 .nav--close {
