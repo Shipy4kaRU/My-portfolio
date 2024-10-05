@@ -46,6 +46,9 @@
   color: var(--link-color);
   transition: color 0.25s;
   cursor: pointer;
+  @media (min-width: $min-tablet-width) {
+    padding: 0;
+  }
 }
 
 .projects__btn:hover {
