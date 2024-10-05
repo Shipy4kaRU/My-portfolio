@@ -32,11 +32,14 @@
     max-width: 13em;
     max-height: 6em;
     border-radius: 1.25em;
+    padding: 0.4em;
   }
 }
 
 .projects__btn__item + .projects__btn__item {
-  margin-left: 1em;
+  @media (max-width: $max-mobile-width) {
+    margin-left: 1em;
+  }
 }
 
 .projects__btn {
