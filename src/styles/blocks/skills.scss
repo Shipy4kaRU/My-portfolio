@@ -1,25 +1,7 @@
-.skills__container {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  margin-left: -50vw;
-  background-color: var(--container-color);
-}
-
 .skills {
-  max-width: 1480px;
-  width: 100%;
-  margin: 0 auto;
-  color: var(--text-container-color);
-  background-color: transparent;
-  padding-bottom: 1.61rem;
 }
 
 .skills__header {
-  display: flex;
-  justify-content: center;
-  margin: 0 0 2rem 0;
-  color: var(--header-container-color);
 }
 
 .skills__list-container {

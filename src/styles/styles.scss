@@ -25,19 +25,6 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 :root {
   font-size: calc(0.5em + 1vw);
   line-height: 1.3;
@@ -82,7 +69,7 @@ svg path {
 .double-container {
   max-width: 1480px;
   margin: 0 auto;
-  padding-bottom: 1px;
+  padding-bottom: 1px; // для полей в footer в Chrome
 }
 
 @import "./blocks/header.scss";
@@ -108,12 +95,10 @@ svg path {
 }
 
 @import "./blocks/bio.scss";
-
+@import "./blocks/section-container.scss";
+@import "./blocks//section.scss";
+@import "./blocks/section__header.scss";
 @import "./blocks/skills.scss";
-
-.main__skills {
-  padding: 2rem 1.7em;
-}
 
 @import "./blocks/skill.scss";
 @import "./blocks/education.scss";
@@ -140,14 +125,7 @@ svg path {
   fill: var(--icon-hover-color);
 }
 
-.js-hidden {
-  display: none;
-}
-
-.disabled {
-  cursor: auto;
-  opacity: 0.5;
-}
+@import "./condition.scss";
 
 @media print {
   * {

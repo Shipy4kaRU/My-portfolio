@@ -13,7 +13,8 @@
   overflow: scroll;
 }
 
-.modal__btn::after {
+.modal__btn::after,
+.modal__btn::before {
   content: " ";
   display: block;
   position: absolute;
@@ -26,15 +27,7 @@
 }
 
 .modal__btn::before {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 0.4rem;
-  right: 0.01em;
-  width: 1rem;
-  height: 2px;
   rotate: -45deg;
-  background-color: white;
 }
 
 .modal__btn {
