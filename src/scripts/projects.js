@@ -3,7 +3,16 @@ const btnsProjects = document.querySelector(".projects__btn-list");
 
 const createIconsPath = function (project) {
   project.steck.map((icon) => {
-    if (icon === "bem" || icon === "redux") {
+    if (icon === "redux") {
+      return project.path.push(
+        `<li>
+          <svg class="skill__icon-svg--redux" width="15px" height="15px">
+            <use xlink:href="#${icon}"></use>
+          </svg>
+        </li>`
+      );
+    }
+    if (icon === "bem") {
       return project.path.push(
         `<li>
           <svg class="icon" width="15px" height="15px">
