@@ -6,7 +6,7 @@ const createIconsPath = function (project) {
     if (icon === "bem" || icon === "redux") {
       return project.path.push(
         `<li>
-          <svg class="icon" width="20px" height="20px">
+          <svg class="icon" width="15px" height="15px">
             <use xlink:href="#${icon}"></use>
           </svg>
         </li>`
