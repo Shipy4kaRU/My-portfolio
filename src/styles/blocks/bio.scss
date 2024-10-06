@@ -37,30 +37,27 @@
 }
 
 .bio__picture-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   grid-area: picture;
   background-color: var(--line-color);
   border-radius: 1.5em;
   width: 100%;
   height: 100%;
   overflow: hidden;
+  max-height: 30em;
+  @media (min-width: $min-tablet-width) {
+    max-height: 20em;
+  }
+  @media (min-width: $min-desktop-width) {
+    max-height: 16em;
+  }
 }
 
 .bio__picture-wrapper img {
-  display: flex;
-  flex-grow: 1;
-  border-radius: 1.5em;
+  display: block;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: top;
-  max-height: 15.5em;
-  @media (max-width: $max-tablet-width) {
-    max-height: 19em;
-  }
-  @media (max-width: $max-mobile-width) {
-    max-height: 13em;
-  }
 }
 
 .bio__header {
