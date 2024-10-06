@@ -5,7 +5,19 @@ const overlay = document.querySelector(".overlay");
 const btnCloseModal = document.querySelector(".modal__btn");
 
 export const showModalWindow = function (img, alt) {
-  console.log(img);
+  const theme = localStorage.getItem("theme");
+  let isDark = false;
+  if (theme === "dark") {
+    isDark = true;
+  }
+  if (!theme || theme === "system") {
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      isDark = true;
+    }
+  }
   const pictureElement = document.getElementById("picture");
   if (pictureElement) {
     pictureElement.remove();
@@ -75,7 +87,9 @@ export const showModalWindow = function (img, alt) {
                   ./img/${img}Mobile@4x.jpg  4x
                 "
               />
-              <img src="./img/${img}Desk.jpg" alt="${alt}" class='modal__img' />
+              <img src="./img/${img}Desk.jpg" alt="${alt}" class='modal__img' ${
+      isDark ? "style=' filter: brightness(.8)'" : ""
+    }/>
             </picture>`
   );
   overlay.style.display = "block";

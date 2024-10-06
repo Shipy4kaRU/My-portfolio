@@ -210,6 +210,11 @@ const createProject = function (project) {
                     : `NotFoundDesk.png`
                 }'
                 alt='Картинка проекта «${project.name}»'
+                style = '${
+                  project.picture
+                    ? ""
+                    : "background-color: var(--substrate-color);filter: brightness(.8);object-fit: contain; "
+                }'
               />
             </picture>
 
