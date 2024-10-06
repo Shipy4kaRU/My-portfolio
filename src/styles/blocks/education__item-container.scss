@@ -60,9 +60,13 @@
 }
 
 .education__item-btn {
-  grid-column: 2/3;
-  margin: 0 0 0 auto;
   background-color: transparent;
+  margin: 0.5em 0 0 auto;
+  @media (min-width: $min-tablet-width) {
+    grid-column: 2/3;
+    justify-self: end;
+    margin: 0;
+  }
 }
 
 .education__item-btn svg {
