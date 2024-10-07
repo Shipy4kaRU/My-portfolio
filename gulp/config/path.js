@@ -20,6 +20,7 @@ export const path = {
     styleTheme: `${srcFolder}/styles/*-theme.scss`,
     normilize: `${srcFolder}/styles/normalize.css`,
     scripts: `${srcFolder}/scripts/**/*.js`,
+    webmanifest: `${srcFolder}/img/**/site.webmanifest`,
     images: `${srcFolder}/img/**/*.{jpg,png,svg,gif,ico,webp}`,
     imagesWebp: `${srcFolder}/img/**/*.{jpg,jpeg,png}`,
     fonts: `${srcFolder}/fonts/`,
