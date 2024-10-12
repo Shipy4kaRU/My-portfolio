@@ -42,7 +42,7 @@ export const PROJECTS_LIST = [
     text: "В рамках данного проекта я глубоко погрузился в работу с React и Firebase, что стало важным этапом в моем профессиональном развитии. Проект был реализован исключительно для desktop версии. Опыт проекта стал не только практическим шагом, но и важной подготовкой к моему основному проекту — WeekFlow. Я с нетерпением жду возможности применить все полученные знания и навыки в новом проекте, который станет логическим продолжением моего обучения и экспериментов.",
     steck: ["react", "js", "html", "css"],
     linkProject: "https://shipy4karu.github.io/Japona-Kitchen/",
-    linkGithubRepository: "https://github.com/Shipy4kaRU/Japonakitchen",
+    linkGithubRepository: "https://github.com/Shipy4kaRU/Japona-Kitchen",
   },
   {
     picture: "",
