@@ -12,7 +12,8 @@
   max-height: 90vh;
   width: 100%;
   height: auto;
-  overflow: scroll;
+  overflow: auto;
+  overscroll-behavior: none; //lifehack from TikTok)
 }
 
 .modal__btn::after,
