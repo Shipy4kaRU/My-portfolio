@@ -4,4 +4,9 @@
   left: 50%;
   margin-left: -50vw;
   background-color: var(--container-color);
+  background-image: linear-gradient(
+    90deg,
+    var(--container-color),
+    var(--container-color-gradient)
+  );
 }
