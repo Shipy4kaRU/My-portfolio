@@ -1,0 +1,2 @@
+var allParts=Array.from(document.querySelectorAll("section")),getSurfacing=(allParts.splice(0,2),function(e,r){e=e[0];e.isIntersecting&&(e.target.classList.remove("part--hidden"),r.unobserve(e.target))}),surfacingObserver=new IntersectionObserver(getSurfacing,{root:null,threshold:.02}),surfacingSections=function(){allParts.forEach(function(e){surfacingObserver.observe(e),e.classList.add("part--hidden")})};export default surfacingSections;
+//# sourceMappingURL=surfacingSections.js.map

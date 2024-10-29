@@ -19,3 +19,8 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.part--hidden {
+  opacity: 0;
+  transform: translateY(1em);
+}

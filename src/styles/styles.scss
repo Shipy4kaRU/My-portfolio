@@ -78,6 +78,10 @@ svg path {
   pointer-events: auto;
 }
 
+section {
+  transition: transform 1s ease-in, opacity 1s ease-out;
+}
+
 //Шаблон двойного контейнера
 .double-container {
   max-width: 1480px;
