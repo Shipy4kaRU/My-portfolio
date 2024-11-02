@@ -45,6 +45,15 @@ export const PROJECTS_LIST = [
     linkGithubRepository: "https://github.com/Shipy4kaRU/Japona-Kitchen",
   },
   {
+    picture: "GiggleHub",
+    name: "GiggleHub",
+    sub: "Тренировка навыков",
+    text: "В ходе работы над этим проектом я улучшил свои навыки в React, Firebase и React Router, что стало значимым этапом в моем профессиональном развитии. Этот опыт стал завершающей подготовкой к запуску моего собственного основного проекта и подтвердил мою готовность к его реализации.",
+    steck: ["react", "react-router", "js", "html", "css"],
+    linkProject: "https://shipy4karu.github.io/GiggleHub/",
+    linkGithubRepository: "https://github.com/Shipy4kaRU/GiggleHub",
+  },
+  {
     picture: "",
     name: "WeekFlow",
     sub: "Личный проект",
