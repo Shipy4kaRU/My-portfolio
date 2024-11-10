@@ -8,7 +8,22 @@ const overlay = document.querySelector(".overlay");
 //   main.style.paddingTop = `calc(3em)`;
 // })(); смена функциональности меню (это старый вариант)
 
-export const closeMenu = () => {
-  menu.classList.toggle("nav--close");
-  header.classList.toggle("jsMenuClose");
+let isMenuOpen = false;
+
+const openMenu = () => {
+  overlay.classList.add("jsOverlay");
+  menu.classList.remove("nav--close");
+  header.classList.remove("jsMenuClose");
+};
+
+const closeMenu = () => {
+  overlay.classList.remove("jsOverlay");
+  menu.classList.add("nav--close");
+  header.classList.add("jsMenuClose");
+};
+
+export const toggleMenu = () => {
+  if (isMenuOpen) closeMenu();
+  if (!isMenuOpen) openMenu();
+  isMenuOpen = !isMenuOpen;
 };
