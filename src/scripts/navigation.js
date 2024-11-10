@@ -23,7 +23,7 @@ export const scrollTo = function (e) {
     if (href === "#skills") {
       // console.log("TRUE");
       return window.scrollBy({
-        top: section.getBoundingClientRect().top - toKnowHeaderHeight() + 3,
+        top: section.getBoundingClientRect().top - toKnowHeaderHeight() + 5,
         behavior: "smooth",
       });
     }

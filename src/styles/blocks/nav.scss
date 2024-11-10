@@ -74,7 +74,7 @@
 }
 
 .nav__link {
-  transition: opacity 0.4s;
+  transition: opacity 0.2s;
   color: var(--link-color);
 }
 
@@ -108,6 +108,12 @@
   padding: 0;
   background-color: transparent;
   display: flex;
+  &:hover {
+    color: var(--btn-hover-color);
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .nav__btn svg path {
@@ -117,14 +123,6 @@
 .icon {
   color: var(--link-color);
   transition: color 0.25s, opacity 0.3s;
-}
-
-.icon:hover {
-  color: var(--btn-hover-color);
-}
-
-.icon:active {
-  opacity: 0.3;
 }
 
 .nav__btns-theme {

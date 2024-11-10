@@ -63,6 +63,15 @@
   background-color: transparent;
   margin: 0.5em 0 0 auto;
   display: block;
+  transition: stroke 0.25s, opacity 0.2s;
+  &:hover:not(.disabled) svg path,
+  &:hover:not(.disabled) svg circle {
+    stroke: var(--icon-hover-color);
+  }
+  &:active:not(.disabled) svg path,
+  &:active:not(.disabled) svg circle {
+    opacity: 0.3;
+  }
   @media (min-width: $min-tablet-width) {
     grid-column: 2/3;
     justify-self: end;
@@ -79,9 +88,4 @@
 .education__item-btn svg path,
 .education__item-btn svg circle {
   stroke: var(--icon-color);
-}
-
-.education__item-btn:hover:not(.disabled) svg path,
-.education__item-btn:hover:not(.disabled) svg circle {
-  stroke: var(--icon-hover-color);
 }
