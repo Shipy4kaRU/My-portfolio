@@ -18,7 +18,7 @@ const surfacingSections = () => {
   allParts.forEach(function (part) {
     // Проверяем, если элемент уже в поле видимости
     const rect = part.getBoundingClientRect();
-    console.log(rect);
+    // console.log(rect);
     const isVisible = rect.top < window.innerHeight && rect.bottom > 0; // получается что хоть кусочек если в поле видимости, то этот элемент уже не скрывается
     // console.log(window.innerHeight);
     // console.log(isVisible);

@@ -4,9 +4,9 @@ const menu = document.querySelector(".nav__list-container");
 const header = document.querySelector(".header__container");
 const overlay = document.querySelector(".overlay");
 
-(function () {
-  main.style.paddingTop = `calc(3em)`;
-})();
+// (function () {
+//   main.style.paddingTop = `calc(3em)`;
+// })(); смена функциональности меню (это старый вариант)
 
 export const closeMenu = () => {
   menu.classList.toggle("nav--close");

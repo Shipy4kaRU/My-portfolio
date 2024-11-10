@@ -155,6 +155,7 @@
 }
 
 .nav__btn-menu {
+  visibility: hidden;
   @media (min-width: $min-tablet-width) {
     display: none;
   }
