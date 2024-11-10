@@ -108,21 +108,10 @@
   padding: 0;
   background-color: transparent;
   display: flex;
-  &:hover {
-    color: var(--btn-hover-color);
-  }
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 .nav__btn svg path {
   transition: opacity 0.45s;
-}
-
-.icon {
-  color: var(--link-color);
-  transition: color 0.25s, opacity 0.3s;
 }
 
 .nav__btns-theme {
@@ -154,10 +143,6 @@
   transition: fill 0.25s;
 }
 
-.header__btn:hover svg g path {
-  fill: var(--icon-hover-color);
-}
-
 .nav__btn {
   background-color: transparent;
 }
@@ -172,5 +157,16 @@
 .nav--close {
   @media (max-width: $max-mobile-width) {
     display: none;
+  }
+}
+
+.icon {
+  color: var(--link-color);
+  transition: color 0.25s, opacity 0.3s;
+  &:hover {
+    color: var(--btn-hover-color);
+  }
+  &:active {
+    opacity: 0.3;
   }
 }

@@ -14,16 +14,17 @@ const openMenu = () => {
   overlay.classList.add("jsOverlay");
   menu.classList.remove("nav--close");
   header.classList.remove("jsMenuClose");
+  isMenuOpen = true;
 };
 
 export const closeMenu = () => {
   overlay.classList.remove("jsOverlay");
   menu.classList.add("nav--close");
   header.classList.add("jsMenuClose");
+  isMenuOpen = false;
 };
 
 export const toggleMenu = () => {
-  if (isMenuOpen) closeMenu();
-  if (!isMenuOpen) openMenu();
-  isMenuOpen = !isMenuOpen;
+  if (isMenuOpen) return closeMenu();
+  if (!isMenuOpen) return openMenu();
 };
