@@ -18,12 +18,17 @@
   border-bottom: 1px dashed var(--text-container-color);
   margin: 0 auto;
   margin-bottom: 1.2em;
+  transition: color 0.25s, border-color 0.25s, opacity 0.3s;
   color: var(--text-container-color);
 }
 
 .feature__button:hover {
   color: var(--icon-hover-color);
   border-color: var(--icon-hover-color);
+}
+
+.feature__button:active {
+  opacity: 0.3;
 }
 
 .feature__list {
@@ -48,11 +53,15 @@
   padding: 0.3em 2em;
   font-size: 1.05rem;
   color: var(--text-page-color);
-  transition: color 0.3s;
+  transition: color 0.3s, opacity 0.3s;
 }
 
 .feature__summary:hover {
   color: var(--icon-hover-color);
+}
+
+.feature__summary:active {
+  opacity: 0.3;
 }
 
 .feature__summary::marker {

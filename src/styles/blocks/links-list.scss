@@ -22,3 +22,7 @@
 .links-list__link:hover:not(.disabled) path {
   fill: var(--icon-hover-color);
 }
+
+.links-list__link:active:not(.disabled) {
+  opacity: 0.3;
+}

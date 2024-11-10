@@ -18,7 +18,3 @@ export const hoverNavLinks = function (e) {
   //   siblings.forEach((sibling) => (sibling.style.opacity = this));
   // }
 };
-
-header.addEventListener("mouseover", hoverNavLinks.bind("0.4"));
-
-header.addEventListener("mouseout", hoverNavLinks.bind("1"));

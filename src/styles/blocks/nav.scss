@@ -74,8 +74,12 @@
 }
 
 .nav__link {
-  transition: opacity 0.45s;
+  transition: opacity 0.4s;
   color: var(--link-color);
+}
+
+.nav__link:active {
+  opacity: 0.3;
 }
 
 .nav__item + .nav__item {
@@ -112,7 +116,7 @@
 
 .icon {
   color: var(--link-color);
-  transition: color 0.25s;
+  transition: color 0.25s, opacity 0.3s;
 }
 
 .icon:hover {
