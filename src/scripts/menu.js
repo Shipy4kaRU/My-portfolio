@@ -16,7 +16,7 @@ const openMenu = () => {
   header.classList.remove("jsMenuClose");
 };
 
-const closeMenu = () => {
+export const closeMenu = () => {
   overlay.classList.remove("jsOverlay");
   menu.classList.add("nav--close");
   header.classList.add("jsMenuClose");

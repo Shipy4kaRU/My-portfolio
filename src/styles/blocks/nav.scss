@@ -3,6 +3,7 @@
   position: relative;
   align-items: center;
   margin: 0;
+  z-index: 1;
   height: 100%;
   width: 100%;
   background-color: var(--container-color);
@@ -12,6 +13,8 @@
 }
 
 .nav__list-container {
+  width: max-content;
+  z-index: 1;
   order: -1;
 }
 

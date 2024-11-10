@@ -92,11 +92,6 @@ export const showModalWindow = function (img, alt) {
     }/>
             </picture>`
   );
-  overlay.style.display = "block";
+  overlay.classList.add("jsOverlay");
   modalWindow.show();
-};
-
-export const hideModalWindow = function () {
-  overlay.style.display = "none";
-  modalWindow.close();
 };
