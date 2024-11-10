@@ -6,7 +6,6 @@
   z-index: 1;
   height: 100%;
   width: 100%;
-  background-color: var(--container-color);
   @media (min-width: $min-tablet-width) {
     display: flex;
   }
@@ -16,6 +15,10 @@
   width: max-content;
   z-index: 1;
   order: -1;
+  @media (max-width: $max-mobile-width) {
+    box-shadow: 0 -10px 2px var(--container-color), 1px 0 4px black,
+      0 1px 5px black;
+  }
 }
 
 .nav__list {
@@ -58,7 +61,7 @@
 
 .nav__link {
   display: block;
-  padding: 0.5em;
+  padding: 0.5em 0.5em 0.5em 0;
   @media (min-width: $min-tablet-width) {
     padding: 0;
   }

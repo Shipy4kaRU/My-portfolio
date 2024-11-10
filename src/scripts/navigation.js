@@ -21,7 +21,7 @@ export const scrollTo = function (e) {
     const section = document.querySelector(`${href}`);
     // it's for Firefox
     if (href === "#skills") {
-      console.log("TRUE");
+      // console.log("TRUE");
       return window.scrollBy({
         top: section.getBoundingClientRect().top - toKnowHeaderHeight() + 3,
         behavior: "smooth",
