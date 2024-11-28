@@ -68,7 +68,7 @@ export const PROJECTS_LIST = [
     sub: "Тренировка навыков",
     text: "Я оттачивал свои навыки верстки, создавая красивый, современный, сложный сайт, следуя урокам из видео англоязычного YouTube. В этом проекте были сложные задачи, включая реализацию параллакс-эффекта. Ранее я уже создавал параллакс-эффект по видео (проект можно найти в репозиториях на моем GitHub), но в этот раз все было реализовано с использованием React.",
     steck: ["react", "react-router", "js", "html", "tailwind", "vite"],
-    linkProject: "",
-    linkGithubRepository: "",
+    linkProject: "https://shipy4karu.github.io/Brainwave/",
+    linkGithubRepository: "https://github.com/Shipy4kaRU/Brainwave",
   },
 ];
