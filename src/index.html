@@ -71,33 +71,6 @@
         );
       }
     </script>
-    <!--
-      Убрал перескок смены темы (раньше сначала ставилась по умолчанию браузерная, а потом менялось на пользовательскую, особенно заметно для слабого 2G), скрипт не особо качественный, но лучше не придумал.
-      P.S: Отключил потому с ним страница не отображается в некоторых браузерах при перезагрузке, похоже проблемы все-таки с кэшем... надеюсь кто-то пофиксит... пожалуйста 😢
-
-      else {
-        document.documentElement.style.display = "none";
-        const theme = localStorage.getItem("theme");
-        const darkThemeStylesheet = document.getElementById("darkTheme");
-        const lightThemeStylesheet = document.getElementById("lightTheme");
-        if (theme === "dark") {
-          lightThemeStylesheet.media = "none";
-          darkThemeStylesheet.media = "all";
-          darkThemeStylesheet.onload = () =>
-            (document.documentElement.style.display = "");
-        }
-        if (theme === "light") {
-          darkThemeStylesheet.media = "none";
-          lightThemeStylesheet.media = "all";
-          lightThemeStylesheet.onload = () =>
-            (document.documentElement.style.display = "");
-        }
-        if (theme === "system" || !theme) {
-          darkThemeStylesheet.media = "(prefers-color-scheme : dark)";
-          lightThemeStylesheet.media = "(prefers-color-scheme : light)";
-          document.documentElement.style.display = "";
-        }
-  } -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -520,13 +493,18 @@
                     <svg width="15px" height="15px" aria-label="JavaScript">
                       <use xlink:href="./img/sprite.svg#js"></use>
                     </svg>
+                    <svg width="15px" height="15px" aria-label="JavaScript">
+                      <use xlink:href="./img/sprite.svg#ts"></use>
+                    </svg>
                   </div>
                   <p class="skills__item-text">
-                    Пишу на ванильном JS в функциональном стиле, понимаю
-                    классический ООП стиль и особенности JavaScript ООП, следую
-                    принципу DRY. Понимаю асинхронное программирование (Event
-                    Loop, Promises, Microtasks, Macrotasks), умею работать с
-                    асинхронными операциями (Fetch API) и обрабатывать ошибки.
+                    Пишу на ванильном JS в функциональном стиле, знаком с
+                    классическим и JS ООП, следую принципу DRY. Понимаю
+                    асинхронное программирование (Event Loop) и умею работать с
+                    асинхронными операциями (Fetch API, Axios). Также владею
+                    TypeScript чтобы создавать более надежный и поддерживаемый
+                    код благодаря статической типизации и улучшенной
+                    автодополнению.
                   </p>
                 </li>
                 <li class="skills__item skill">
@@ -565,10 +543,10 @@
                     </svg>
                   </div>
                   <p class="skills__item-text">
-                    Создаю SPA, многостраничные SPA при помощи React. Умею
-                    работать с базовыми концепциями React, различными методами
-                    стилизации компонентов. А также использую и более
-                    продвинутые концепции: Context API, Redux, Custom Hooks,
+                    Создаю SPA при помощи React. Умею работать с базовыми
+                    концепциями React, различными методами стилизации
+                    компонентов. А также использую и более продвинутые
+                    концепции: Context API, RTK, RTK Query, Custom Hooks,
                     Routing.
                   </p>
                 </li>
